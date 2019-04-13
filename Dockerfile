@@ -2,11 +2,11 @@ FROM node:8
 
 WORKDIR /usr/src/app
 
-COPY ./hello-microservice/package*.json /
+COPY ./package*.json /
 
 RUN npm install
 
-COPY ./hello-microservice .
+COPY . .
 
 EXPOSE 3000
 
